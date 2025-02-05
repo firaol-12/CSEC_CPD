@@ -1,0 +1,26 @@
+#include<iostream>
+#include <algorithm>
+#include <vector>
+#include <string>
+#include <set>
+using namespace std;
+
+int main()
+{
+    string n,s;
+    cin>>s;
+    set <string> mySet;
+    for(int i=0;i<s.length();i++){
+        n=s[i];
+        mySet.insert(n);
+    }
+    int l=mySet.size();
+    
+    if(l%2==0){
+        cout << "CHAT WITH HER!" << endl;
+    }
+    else{
+        cout << "IGNORE HIM!" << endl;
+    }
+    return 0;
+}
